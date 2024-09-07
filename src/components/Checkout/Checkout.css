@@ -15,18 +15,19 @@
   }
   .all-card-items {
     width: 740px;
-    background: #fafafa;
+    /* background: #fafafa; */
     /* background: red; */
     padding: 0px 24px;
     border-radius: 12px;
     margin-bottom: 50px;
   }
   .cart-item {
+    width: 650px;
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding: 15px 0px;
-    /* background: blue; */
+    padding: 15px 20px;
+    background: #fafafa;
     border-bottom: 1px solid #eeecec;
   }
   .cart-item:last-child {
