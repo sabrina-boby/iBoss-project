@@ -1,0 +1,164 @@
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(241, 238, 238);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 180px;
+    a{
+      text-decoration: none;
+    }
+    img {
+      height:38px;
+      width: 38px;
+      object-fit: contain;
+    }
+    .brand {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .blue-text {
+      color: #3b82f6;
+    }
+  }
+
+  .navbar {
+    ul {
+      display: flex;
+      padding-left: 0;
+      li {
+        text-align: center;
+        width: 100%;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        padding: 8px 20px;
+        border-radius: 6px;
+      }
+      a:hover {
+        background: #f2f2f2;
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    gap: 10px;
+    img{
+      height: 34px;
+      width: 34px;
+    }
+    .logout{
+      background-color: blue;
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 3px 10px !important;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      border-radius: 3px;
+      transition: 0.4s;
+    }
+
+    &.open span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 5px);
+    }
+    
+    &.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    &.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -5px);
+    }
+  }
+
+  @media (max-width: 980px) {
+    border-bottom:none;
+    .container {
+      display: flex;
+      gap: 0;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      background-color: #d8eaf8;
+      flex-direction: column;
+      align-items: center;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      z-index: 100;
+
+      ul {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        a:hover {
+          background: none;
+        }
+        li {
+          width: 100%;
+          text-align: start;
+          padding: 20px 0;
+        }
+
+        li:hover {
+          transition: 0.7s;
+          background: blue;
+          a {
+            color: white;
+          }
+        }
+      }
+
+      &.active {
+        height: 350px;
+      }
+    }
+
+    .button {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+}

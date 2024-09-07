@@ -1,0 +1,227 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+  }
+  .menu {
+    /* max-width: 263px; */
+    margin: 80px 0;
+    width: 100%;
+    border-right: 1px solid rgb(223, 220, 220);
+    padding-right: 20px;
+    .menu-item {
+      margin-top: 30px;
+      text-wrap: nowrap;
+      background-color: white;
+      border: none;
+      padding: 15px 30px 15px 15px;
+      width: 100%;
+      /* margin-right: 15px; */
+      text-align: left;
+      font-size: 16px;
+      color: #666;
+      border-bottom: 1px solid #eeecec;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+  
+    .menu-item:hover {
+      background-color: #f0f0f0;
+    }
+  
+    .menu-item.active {
+      /* border-radius: 8px; */
+      /* padding: 12px 24px 12px 24px; */
+      background-color: black;
+      color: white;
+    }
+  
+    .menu-item:not(.active) {
+      color: #888;
+    }
+  
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+  }
+  hr {
+    border-left: 1px solid rgb(248, 245, 245);
+  }
+  .cards-section {
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    /* margin: auto; */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid rgb(231, 228, 228);
+      width: 277px;
+      padding: 16px;
+      text-align: center;
+      font-size: 16px;
+  
+      .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      .product-name {
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        margin: 15px 0;
+        text-align: start;
+      }
+  
+      .price {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+      }
+  
+      .current-price {
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+      }
+  
+      .original-price {
+        text-decoration: line-through;
+        color: #888;
+      }
+  
+      .discount {
+        color: #b92e2e;
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: left;
+      }
+  
+      .description {
+        color: #a39d9d;
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+      }
+  
+      .add-to-cart {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          margin-right: 12px;
+        }
+      }
+  
+      .add-to-cart:hover {
+        background-color: #444;
+      }
+    }
+  }
+  /* =================*/
+  .pagination-parent{
+    width: 100%;
+    /* background: red; */
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .pagination-button,
+  .pagination-arrow {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .pagination-arrow:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button.active {
+    background-color: #000;
+    color: white;
+    border-color: #000;
+  }
+  
+  .pagination-ellipsis {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .container{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .cards-section {
+      grid-template-columns: repeat(2, 1fr);
+      gap:30px;
+    }
+    .card {
+      width: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .container {
+      flex-direction: column;
+      gap: 32px;
+      justify-content: none;
+      /* border: 2px solid blue; */
+    }
+    .menu {
+      /* max-width: 263px; */
+      display: flex;
+      width: 100%;
+      border-right: 0;
+      padding-right: 0px;
+      
+      /* border-bottom: 1px solid rgb(223, 220, 220); */
+      gap: 10px;
+      align-items: center;
+  
+      .menu-item {
+        border-radius: 0;
+        background: rgb(230, 228, 228);
+      }
+    }
+    .cards-section {
+      grid-template-columns: 1fr;
+      .card {
+        margin: 0 auto;
+      }
+    }
+  }
+  

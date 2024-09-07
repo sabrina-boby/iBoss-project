@@ -1,0 +1,149 @@
+.body {
+  background-color: #1c1c1c;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  color: #fff;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  .footer-up {
+    display: flex;
+  }
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #b3b0b0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom a {
+  color: #b3b0b0;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+.footer-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons img {
+  width: 20px;
+}
+.copy-right {
+  color: #555555;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo-res {
+  display: none;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 20px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-bottom a {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .footer {
+    .footer-up {
+      /* text-wrap: nowrap; */
+      text-align: start;
+      /* background: red; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+  }
+  .footer-logo-res {
+    display: block;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .social-icons {
+    gap: 20px;
+  }
+  .footer-links {
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 50px;
+  }
+}
+

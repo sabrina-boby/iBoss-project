@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.signin-full {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 500px;
+  height: 590px;
+  width: 100%;
+  margin: 203px auto 0px auto;
+  h3 {
+    font-weight: 500px;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 40px;
+  }
+
+  .forgot-pass {
+    color: #1e99f5;
+    float: right;
+    text-decoration: none;
+  }
+  .checkbox-group {
+    margin-top: 60px;
+  }
+  .signin {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .signin-full {
+    margin: 2px auto 0px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .signin-full {
+    padding: 5px;
+    max-width: 400px;
+    width: 95%;
+  }
+}

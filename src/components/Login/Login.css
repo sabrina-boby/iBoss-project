@@ -1,0 +1,231 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-box {
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 500px;
+    height: 590px;
+    width: 100%;
+    margin: 203px auto 0px auto;
+    h3 {
+      font-size: 24px;
+      margin: 14px;
+    }
+    h2 {
+      /* background: blue; */
+      font-size: 40px;
+      font-weight: 700;
+      margin: -8px auto;
+    }
+    p {
+      /* background: yellow; */
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .brand {
+      font-weight: bold;
+    }
+    .blue-text {
+      color: #3b82f6;
+    }
+  }
+  
+  .input-group {
+    margin-bottom: 14px;
+  }
+  .name {
+    display: flex;
+    gap: 14px;
+  }
+  .password {
+    display: flex;
+    /* width: 99.5%; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #password {
+    border: none;
+  }
+  #email {
+    width: 94%;
+  }
+  .show-pass {
+    background: white;
+    padding: 10px;
+    width: 21.48px;
+    height: 18.95px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e4e0e0;
+    border-radius: 4px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    font-size: 0.85rem;
+  }
+  .link-color {
+    color: #000;
+  }
+  .signup-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #333;
+  }
+  
+  .separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    display: block;
+    width: 47%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .separator::before {
+    left: 0;
+  }
+  
+  .separator::after {
+    right: 0;
+  }
+  
+  .social-signin {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    .social-btn {
+      border: 1px solid #d8d8d8;
+      width: 200px;
+      height: 25px;
+      padding: 14px 20px 14px 20px;
+      border-radius: 5px;
+    }
+  }
+  
+  .img-section {
+    width: 688px;
+    height: 1024px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .icon {
+      width: 100px;
+      height: 100px;
+      img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      position: absolute;
+      text-align: center;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 5px auto;
+      color: white;
+    }
+    .blue-text {
+      color: #3b82f6;
+    }
+    p {
+      /* font-family: Barlow; */
+      font-size: 16px;
+      font-weight: 500;
+      /* line-height: 19.2px; */
+      text-align: center;
+      color: white;
+    }
+  }
+  .signin-color {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .container {
+      flex-direction: column;
+    }
+    .img-section {
+      width: 100%;
+      height: 500px;
+    }
+    .form-box {
+      margin: 50px auto 0px auto;
+    }
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .container {
+      flex-direction: column;
+    }
+    .form-box {
+      padding: 5px;
+      max-width: 400px;
+      width: 95%;
+    }
+    #email {
+      width: 92%;
+    }
+    .img-section {
+      width: 100%;
+      height: 400px;
+    }
+    .form-box {
+      margin: 0 auto;
+    }
+  }
+  

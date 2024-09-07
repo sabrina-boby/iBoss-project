@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Recliner Chair Wood",
+    "price": 299.0,
+    "originalPrice": 350.0,
+    "discount": "30% OFF",
+    "description": "It has a backrest that can be tilted back, and often a footrest extended.",
+    "image": "chair1"
+  },
+  {
+    "id": 2,
+    "name": "Timber Ride Padded",
+    "price": 59.0,
+    "originalPrice": 75.0,
+    "discount": "30% OFF",
+    "description": "High Back Rocking Side Pocket Portable Folding Outdoor Camping Chairs ",
+    "image": "chair2"
+  },
+  {
+    "id": 3,
+    "name": "Colored Wooden Chair",
+    "price": 299.0,
+    "originalPrice": 350.0,
+    "discount": "30% OFF",
+    "description": "It has a backrest that can be tilted back, and often a footrest extended",
+    "image": "chair3"
+  },
+  {
+    "id": 4,
+    "name": "Blank Bamboo Wicker",
+    "price": 165.0,
+    "originalPrice": 400.0,
+    "discount": "30% OFF",
+    "description": "It has a backrest that can be tilted back, and often a footrest extended",
+    "image": "chair4"
+  },
+  {
+    "id": 5,
+    "name": "Isolated Wooden Rockr",
+    "price": 165.0,
+    "originalPrice": 350.0,
+    "discount": "30% OFF",
+    "description": "It has a backrest that can be tilted back, and often a footrest extended",
+    "image": "chair5"
+  },
+  {
+    "id": 6,
+    "name": "Minimal Empty Rocking",
+    "price": 299.0,
+    "originalPrice": 350.0,
+    "discount": "30% OFF",
+    "description": "A seat, especially for one person, usually having four legs for support.",
+    "image": "chair6"
+  }
+]
