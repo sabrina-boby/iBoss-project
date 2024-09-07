@@ -54,24 +54,6 @@ const Products = () => {
         <p>No products available.</p>
       )}
 
-        {/* <div className="card">
-          <img src={chair2} alt="Recliner Chair" className="product-image" />
-          <h2 className="product-name">Recliner Chair Wood</h2>
-          <p className="price">
-            <span className="current-price">€299.00</span>
-            <span className="original-price">€350.00</span>
-            <span className="discount">30% OFF</span>
-          </p>
-          <p className="description">
-            It has a backrest that can be tilted back, and often a footrest
-            extended.
-          </p>
-          <button className="add-to-cart">
-            <img src={Added} alt="" />
-            Add to cart
-          </button>
-        </div> */}
-
         </div>
         {/* pagination */}
         <div className="pagination-parent">
