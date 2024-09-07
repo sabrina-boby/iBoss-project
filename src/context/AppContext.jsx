@@ -4,8 +4,8 @@ export const AppContext = createContext();
 
 // Define a static default user
 const defaultUser = {
-  email: 'boboypakhi@gmail.com',
-  password: '123456',
+  email: 'test@gmail.com',
+  password: '12345',
 };
 
 export const AppProvider = ({ children }) => {
